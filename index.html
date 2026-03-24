@@ -1,1 +1,59 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Portfolio</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <nav>\n        <ul>\n            <li><a href="#hero">Home</a></li>\n            <li><a href="#about">About</a></li>\n            <li><a href="#gallery">Gallery</a></li>\n            <li><a href="#contact">Contact</a></li>\n        </ul>\n    </nav>\n    <section id="hero">\n        <h1>Welcome to My Portfolio</h1>\n        <p>Your one-stop solution for all your adhesive needs!</p>\n    </section>\n    <section id="about">\n        <h2>About Me</h2>\n        <p>Brief introduction about yourself and your work.</p>\n    </section>\n    <section id="gallery">\n        <h2>Gallery</h2>\n        <p>Showcase of your work.</p>\n    </section>\n    <section id="budget-form">\n        <h2>Request a Budget</h2>\n        <form action="#">\n            <label for="budget">Your Budget:</label>\n            <input type="text" id="budget" name="budget">\n            <input type="submit" value="Submit">\n        </form>\n    </section>\n    <section id="contact">\n        <h2>Contact Information</h2>\n        <p>You can reach me via WhatsApp: <a href="https://wa.me/5543984046323">+55 43 984046323</a></p>\n        <p>Follow me on Instagram: <a href="https://instagram.com/alves.adesivos">@alves.adesivos</a></p>\n    </section>\n    <footer>\n        <p>&copy; 2026 Your Name. All rights reserved.</p>\n    </footer>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alves Adesivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">Alves Adesivos</span>
+        <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="hero" class="hero fade-in">
+        <h1>Bem-vindo ao Alves Adesivos</h1>
+        <p>Sua solução completa para todos os seus projetos de adesivos!</p>
+        <a href="#gallery" class="btn">Ver Galeria</a>
+    </section>
+    <section id="about" class="about fade-in">
+        <h2>Sobre Nós</h2>
+        <p>Somos especializados em adesivos personalizados de alta qualidade para residências, empresas e veículos. Com anos de experiência, transformamos suas ideias em realidade.</p>
+    </section>
+    <section id="gallery" class="gallery-section fade-in">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <div class="card"><p>Adesivo Decorativo</p></div>
+            <div class="card"><p>Adesivo Empresarial</p></div>
+            <div class="card"><p>Adesivo Veicular</p></div>
+            <div class="card"><p>Adesivo Personalizado</p></div>
+        </div>
+    </section>
+    <section id="budget-form" class="budget fade-in">
+        <h2>Solicite um Orçamento</h2>
+        <form id="contactForm" action="#" onsubmit="return validateForm()">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Descreva o que você precisa..."></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+    <section id="contact" class="contact fade-in">
+        <h2>Contato</h2>
+        <p>Entre em contato via WhatsApp: <a href="https://wa.me/5543984046323">+55 43 98404-6323</a></p>
+        <p>Siga-nos no Instagram: <a href="https://instagram.com/alves.adesivos">@alves.adesivos</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Alves Adesivos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
