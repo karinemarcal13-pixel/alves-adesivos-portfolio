@@ -7,34 +7,53 @@
 
   <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<!-- MENU -->
+<nav class="menu">
+  <h2>Alves Adesivos</h2>
+  <div>
+    <a href="#sobre">Sobre</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO -->
 <header>
   <h1><i class="fa-solid fa-paint-roller"></i> Alves Adesivos</h1>
-  <p>Transforme seu ambiente sem reforma</p>
+  <p>Transforme seu ambiente sem reforma, sem sujeira e sem dor de cabeça</p>
   <a href="#contato" class="btn">
     <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
   </a>
 </header>
 
-<section class="sobre">
-  <h2><i class="fa-solid fa-star"></i> Transformações incríveis com adesivos</h2>
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <h2><i class="fa-solid fa-star"></i> Transformações incríveis</h2>
   <p>
     Dê uma nova vida aos seus móveis e paredes sem gastar com reforma.
-
-    Trabalhamos com adesivos de alta qualidade, resistentes à água e perfeitos.
-
-    Renove seus móveis, paredes e até banheiros de forma rápida, prática e econômica.
+    Trabalhamos com adesivos de alta qualidade, resistentes à água.
   </p>
+
+  <div class="destaque">
+    <p><i class="fa-solid fa-check"></i> Sem quebra-quebra</p>
+    <p><i class="fa-solid fa-check"></i> Aplicação rápida</p>
+    <p><i class="fa-solid fa-check"></i> Resultado profissional</p>
+  </div>
 </section>
 
-<section class="vantagens">
-  <h2><i class="fa-solid fa-thumbs-up"></i> Por que escolher adesivos?</h2>
+<!-- VANTAGENS -->
+<section class="vantagens" id="vantagens">
+  <h2><i class="fa-solid fa-thumbs-up"></i> Por que escolher?</h2>
   <div class="cards">
     <div class="card">
       <h3><i class="fa-solid fa-money-bill-wave"></i> Econômico</h3>
-      <p>Mais barato que reforma tradicional</p>
+      <p>Até 70% mais barato que reforma</p>
     </div>
     <div class="card">
       <h3><i class="fa-solid fa-bolt"></i> Rápido</h3>
@@ -42,24 +61,67 @@
     </div>
     <div class="card">
       <h3><i class="fa-solid fa-droplet"></i> Resistente</h3>
-      <p>Não descola com água ou umidade</p>
+      <p>Perfeito para cozinha e banheiro</p>
     </div>
     <div class="card">
       <h3><i class="fa-solid fa-palette"></i> Personalizado</h3>
-      <p>Escolha cores e estilos exclusivos</p>
+      <p>Do seu jeito</p>
     </div>
   </div>
 </section>
 
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+  <h2><i class="fa-solid fa-screwdriver-wrench"></i> O que transformamos</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🍳 Cozinhas</h3>
+      <p>Armários e paredes renovados</p>
+    </div>
+    <div class="card">
+      <h3>🚿 Banheiros</h3>
+      <p>Visual moderno sem reforma</p>
+    </div>
+    <div class="card">
+      <h3>🪑 Móveis</h3>
+      <p>Parecem novos novamente</p>
+    </div>
+    <div class="card">
+      <h3>🏠 Ambientes</h3>
+      <p>Casa inteira renovada</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+  <h2><i class="fa-solid fa-comments"></i> O que clientes dizem</h2>
+
+  <div class="cards">
+    <div class="card">
+      <p>"Ficou perfeito! Parece outro ambiente."</p>
+      <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+    <div class="card">
+      <p>"Muito rápido e sem sujeira, recomendo!"</p>
+      <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
 <section class="galeria">
-  <h2><i class="fa-solid fa-images"></i> Veja transformações reais diretamente pelo nosso Instagram</h2>
+  <h2><i class="fa-solid fa-images"></i> Veja resultados reais</h2>
   <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="btn">
-    <i class="fa-brands fa-instagram"></i> Ver antes e depois no Instagram
+    <i class="fa-brands fa-instagram"></i> Ver no Instagram
   </a>
 </section>
 
+<!-- CONTATO -->
 <section class="contato" id="contato">
-  <h2><i class="fa-solid fa-paper-plane"></i> Solicite um orçamento agora mesmo</h2>
+  <h2><i class="fa-solid fa-paper-plane"></i> Peça seu orçamento</h2>
+
   <form onsubmit="enviarWhats(event)">
     <input type="text" id="nome" placeholder="Seu nome" required>
     <input type="text" id="servico" placeholder="O que deseja transformar?" required>
@@ -69,16 +131,17 @@
   </form>
 
   <a href="https://wa.me/5543984046323" class="whatsapp">
-    <i class="fa-brands fa-whatsapp"></i>  WhatsApp
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
   </a>
 
   <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="instagram">
-    <i class="fa-brands fa-instagram"></i>  Instagram
+    <i class="fa-brands fa-instagram"></i> Instagram
   </a>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p><i class="fa-regular fa-copyright"></i> 2026 Alves Adesivos - Todos os direitos reservados</p>
+  <p>© 2026 Alves Adesivos</p>
 </footer>
 
 <script src="script.js"></script>
