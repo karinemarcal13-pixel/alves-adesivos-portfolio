@@ -1,201 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alves Adesivos</title>
 
-<!-- ÍCONES -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>A R DE LIMA AZALEIA COMUNICAÇÃO VISUAL</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: #000;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f8fafc;
-  color: #1e293b;
-}
-
-/* HEADER */
-header {
-  padding: 60px 20px;
-  text-align: center;
-  background: white;
-}
-
-header h1 {
-  font-size: 34px;
-}
-
-header p {
-  margin: 10px 0 20px;
-  color: #64748b;
-}
-
-/* BOTÃO */
-.btn {
-  background: #2563eb;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-/* SERVIÇOS */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.card i {
-  font-size: 30px;
-  margin-bottom: 15px;
-  color: #2563eb;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-/* BENEFÍCIOS */
-.beneficios {
-  background: #2563eb;
-  color: white;
-  border-radius: 20px;
-}
-
-/* WHATS */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #22c55e;
-  color: white;
-  padding: 16px;
-  border-radius: 50%;
-  font-size: 22px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #64748b;
+/* AGORA GRANDE */
+.logo {
+    width: 500px !important;
+    max-width: none !important;
+    height: auto;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>Reforme sem dor de cabeça</h1>
-  <p>Adesivos para transformar sua casa rápido, sem sujeira</p>
-
-  <a href="#" class="btn" onclick="enviarWhats()">
-    Pedir Orçamento
-  </a>
-
+<header class="topo">
+    <img src="logo.png" alt="Azaleia Comunicação Visual" class="logo">
 </header>
 
-<section>
-  <h2>🛠️ Serviços</h2>
-
-  <div class="cards">
-    <div class="card">
-      <i class="fas fa-couch"></i>
-      <p>Móveis</p>
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h2>TRANSFORMAMOS SUA FACHADA EM UMA MÁQUINA DE VENDER</h2>
+        <p>Fachadas • Adesivos • Banners • Placas</p>
+        <a href="https://wa.me/5543999422005" class="btn">SOLICITAR ORÇAMENTO</a>
     </div>
-
-    <div class="card">
-      <i class="fas fa-blender"></i>
-      <p>Geladeiras</p>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-kitchen-set"></i>
-      <p>Cozinhas</p>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-door-open"></i>
-      <p>Portas</p>
-    </div>
-  </div>
 </section>
 
-<section class="beneficios">
-  <h2>🔥 Vantagens</h2>
-
-  <div class="cards">
-    <div class="card">
-      <i class="fas fa-broom"></i>
-      <p>Sem sujeira</p>
+<section class="diferencial">
+    <div>
+        <h3>✔ Atendimento Rápido</h3>
+        <p>Agilidade do orçamento até a entrega</p>
     </div>
 
-    <div class="card">
-      <i class="fas fa-bolt"></i>
-      <p>Rápido</p>
+    <div>
+        <h3>✔ Qualidade Profissional</h3>
+        <p>Materiais duráveis e acabamento perfeito</p>
     </div>
 
-    <div class="card">
-      <i class="fas fa-money-bill"></i>
-      <p>Barato</p>
+    <div>
+        <h3>✔ Atendimento Regional</h3>
+        <p>Londrina e toda região</p>
     </div>
-
-    <div class="card">
-      <i class="fas fa-star"></i>
-      <p>Resultado top</p>
-    </div>
-  </div>
 </section>
 
-<section>
-  <h2>📸 Veja resultados</h2>
-  <a class="btn" href="https://www.instagram.com/alves.adesivos/" target="_blank">
-    Ver Instagram
-  </a>
+<section class="servicos">
+    <h2>SERVIÇOS</h2>
+
+    <div class="grid">
+        <div class="card">FACHADAS COMERCIAIS</div>
+        <div class="card">FACHADAS PERSONALIZADAS</div>
+        <div class="card">BANNERS</div>
+        <div class="card">PLACAS</div>
+        <div class="card">ENVELOPAMENTO</div>
+        <div class="card">IDENTIDADE VISUAL</div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>PRECISA DE UM ORÇAMENTO RÁPIDO?</h2>
+    <p>Fale direto no WhatsApp agora</p>
+    <a href="https://wa.me/5543999422005" class="btn">CHAMAR AGORA</a>
+</section>
+
+<section class="contato">
+    <h2>CONTATO</h2>
+    <p>📞 (43) 99942-2005</p>
+    <p>📍 Londrina - PR</p>
 </section>
 
 <footer>
-  Atendimento em Londrina e região
+    <p>© 2026 A R DE LIMA AZALEIA COMUNICAÇÃO VISUAL</p>
 </footer>
 
-<a href="#" class="whatsapp" onclick="enviarWhats()">💬</a>
+<a href="https://wa.me/554399422005" class="whatsapp">💬</a>
 
-<script>
-const numeroWhats = "5543984046323";
-
-function enviarWhats() {
-  const mensagem = "Olá, quero um orçamento de adesivos";
-  const link = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
-  window.open(link, "_blank");
-}
-</script>
 <script src="script.js"></script>
 </body>
 </html>
